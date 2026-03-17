@@ -6,6 +6,8 @@
     <title>DO ANYTHING</title>
     <style>
         
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
         body {
             margin: 0;
             overflow: hidden;
@@ -19,14 +21,14 @@
             position: absolute;
             width: 80px;
             height: 80px;
-            background: #ff4757;
-            color: white;
+            background: #f0ede6;
+            color: black;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 50px;
             font-weight: 900;
-            font-family: 'Arial Black', sans-serif;
+            font-family: 'Black Ops One';
             border-radius: 12px;
             user-select: none;
             cursor: grab;
@@ -35,18 +37,34 @@
             transform-origin: center center;
             will-change: transform;
         }
-
         .letter:active { cursor: grabbing; }
-        
     </style>
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-to-play.html">How to Play</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
 
-    <div class="letter">H</div>
-    <div class="letter">E</div>
-    <div class="letter">L</div>
-    <div class="letter">L</div>
+    <div class="letter">D</div>
     <div class="letter">O</div>
+    <div class="letter">A</div>
+    <div class="letter">N</div>
+    <div class="letter">Y</div>
+    <div class="letter">T</div>
+    <div class="letter">H</div>
+    <div class="letter">I</div>
+    <div class="letter">N</div>
+    <div class="letter">G</div>
+
+        <footer>
+            <p>GRAB · DRAG · SCULPT · CREATE</p>
+        </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
     <script>
@@ -65,14 +83,16 @@
 
         Composite.add(world, [floor, leftWall, rightWall, ceiling]);
 
+
         // 2. Function to update boundaries based on current window size
         function updateBoundaries() {
             const w = window.innerWidth;
             const h = window.innerHeight;
 
             // Position floor at the bottom
-            Matter.Body.setPosition(floor, { x: w / 2, y: h + (thickness / 2) });
+            Matter.Body.setPosition(floor, { x: (w / 2), y: h + (thickness / 2) });
             Matter.Body.setVertices(floor, Bodies.rectangle(w / 2, h + (thickness / 2), w * 2, thickness).vertices);
+
 
             // Position walls
             Matter.Body.setPosition(leftWall, { x: -thickness / 2, y: h / 2 });

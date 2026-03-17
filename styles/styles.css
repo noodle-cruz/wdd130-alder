@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff3c00;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid #f0ede6;
+}
+li:hover {
+    background-color: #ffb89a;
+}
+
+nav a {
+    color: #f0ede6;
+    text-decoration: none;
+}
+
+p {
+    color: #f0ede6;
+}
