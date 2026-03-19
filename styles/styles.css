@@ -27,3 +27,7 @@ p {
     color: #f0ede6;
     font-family: 'Bebas Neue';
 }
+
+#hint {
+    padding: 10px;
+}
