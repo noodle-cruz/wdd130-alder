@@ -13,7 +13,31 @@
             width: 100vw;
             touch-action: none; /* Prevents scrolling while dragging on mobile */
         }
+        #gallery {
+        text-align: center;
+    }
 
+    .gallery-item {
+        display: inline-block;
+        margin: 10px 30px;
+        text-align: center;
+    }
+
+    .screenshot {
+        width: 220px;
+        height: 220px;
+        border-radius: 20%;
+        object-fit: cover;
+        border: 8px solid white;
+        display: block;
+    }
+
+    .gallery-item p {
+        color: white;
+        margin-top: 8px;
+        font-size: 2rem;
+        margin: 8px 0 0 0;
+    }
     </style>
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -27,6 +51,27 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-
+    <div id="gallery">
+    <div class="gallery-item">
+        <img class="screenshot" src="images/rocket.png" alt="Rocket">
+        <p>Rocket</p>
+    </div>
+    <div class="gallery-item">
+        <img class="screenshot" src="images/hammer.png" alt="Hammer">
+        <p>Hammer</p>
+    </div>
+    <div class="gallery-item">
+        <img class="screenshot" src="images/pyaramid.png" alt="Pyramid">
+        <p>Pyramid</p>
+    </div>
+    <div class="gallery-item">
+        <img class="screenshot" src="images/rocket 2.png" alt="Rocket 2">
+        <p>Rocket 2</p>
+    </div>
+    <div class="gallery-item">
+        <img class="screenshot" src="images/tower.png" alt="Tower">
+        <p>Tower</p>
+    </div>
+</div>
 </body>
 </html>
