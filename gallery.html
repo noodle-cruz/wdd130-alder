@@ -19,7 +19,7 @@
 
     .gallery-item {
         display: inline-block;
-        margin: 10px 30px;
+        margin: 5px 30px;
         text-align: center;
     }
 
@@ -34,10 +34,70 @@
 
     .gallery-item p {
         color: white;
-        margin-top: 8px;
+        margin-top: 5px;
         font-size: 2rem;
-        margin: 8px 0 0 0;
+        margin: 4px 0 0 0;
+        text-align: center;  /* add this */
+        width: 220px;        
     }
+        .gallery-item h4 {
+        color: white;
+        margin-top: 6px;
+        font-size: 1rem;
+        margin: 4px 0 0 0;
+        text-align: center;  /* add this */
+        width: 220px;        
+    }
+    table.minimalistBlack {
+  border: 3px solid #000000;
+  width: 100%;
+  height: 200px;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 1px solid #ffffff;
+  padding: 5px 4px;
+}
+table.minimalistBlack tbody td {
+  font-size: 13px;
+}
+table.minimalistBlack thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+table.minimalistBlack tfoot td {
+  font-size: 14px;
+}
+#wrapper {
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  margin: 0px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 30px;
+  border: 6px solid white;
+  min-height: 180px;
+   position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+}
+#wrapper div {
+    margin: 8px;
+}
     </style>
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -55,23 +115,46 @@
     <div class="gallery-item">
         <img class="screenshot" src="images/rocket.png" alt="Rocket">
         <p>Rocket</p>
+        <h4>Make rockets of any size using any blocks!</h4>
     </div>
     <div class="gallery-item">
         <img class="screenshot" src="images/hammer.png" alt="Hammer">
         <p>Hammer</p>
+        <h4>Create tools like the hammer!</h4>
     </div>
     <div class="gallery-item">
         <img class="screenshot" src="images/pyaramid.png" alt="Pyramid">
         <p>Pyramid</p>
+        <h4>Recreate history like the pyramids!</h4>
     </div>
     <div class="gallery-item">
         <img class="screenshot" src="images/rocket 2.png" alt="Rocket 2">
         <p>Rocket 2</p>
+        <h4>Take your creativity to space!</h4>
     </div>
     <div class="gallery-item">
         <img class="screenshot" src="images/tower.png" alt="Tower">
         <p>Tower</p>
+        <h4>The leaning tower made of various blocks!</h4>
     </div>
 </div>
+<div id="wrapper">
+<form>
+  <div>
+    <h3>Submit your Creations!</h3>
+    <label for="what_is_this">Image</label>
+    <input type="file" id="what_is_this" name="what_is_this" accept="image/*" required>
+  </div>
+  <div>
+    <label for="">Title</label>
+    <input type="text" id="" name="" required>
+  </div>
+  <div>
+    <label for="_1">Description</label>
+    <input type="text" id="_1" name="_1" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+        </div>
 </body>
 </html>
